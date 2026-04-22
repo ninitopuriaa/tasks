@@ -70,9 +70,8 @@ const output = document.getElementById("list");
 button.addEventListener("click", () => {
     const value = input.value;
     if(value) {
-        const doneButton = document.createElement("button");
+        const doneButton = document.createElement("div");
         doneButton.classList.add("doneButton");
-        doneButton.textContent = "";
         doneButton.addEventListener("click", () => {
             listItem.classList.toggle("done");
         });
